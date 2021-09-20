@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#03A9F4"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".DataInternal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:backgroundTint="#FFC107"
+                android:ems="10"
+                android:gravity="center_horizontal|center_vertical"
+                android:hint="Masukkan nama file"
+                android:inputType="textPersonName|textNoSuggestions"
+                android:padding="15dp"
+                android:textColor="#3F51B5"
+                android:textColorHighlight="#F3E6E6"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_weight="1"
+                android:background="#03A9F4"
+                android:orientation="vertical"></LinearLayout>
+
+            <EditText
+                android:id="@+id/edit_file"
+                style="@style/Widget.AppCompat.EditText"
+                android:layout_width="match_parent"
+                android:layout_height="550dp"
+                android:layout_below="@+id/header_linear"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/white"
+                android:gravity="top|start"
+                android:hint="Isi dari file."
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:padding="5dp"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:id="@+id/header_linear"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center_horizontal|start"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:backgroundTint="#009688"
+                    android:padding="5dp"
+                    android:text="Buat File" />
+
+                <Button
+                    android:id="@+id/button_open"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:backgroundTint="#4CAF50"
+                    android:padding="5dp"
+                    android:text="Buka File" />
+
+                <Button
+                    android:id="@+id/button_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:backgroundTint="#FFC107"
+                    android:padding="5dp"
+                    android:text="Simpan File"
+                    android:textColor="#000000" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
